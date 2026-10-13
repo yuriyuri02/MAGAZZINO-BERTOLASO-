@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAIAAAC2BqGFAAACtElEQVR42u3cPWsUQRjA8eeZfbm7zQkaVAJGlFQWCQZbbUSxsPILWImWfgILa8FSLKNY2YuVpBBRSWVhExQhYif4Erzc3u7ePBbJBzA3E9y7/P+k3WHzu8nM3LJEF5ZWhA4+BwHQQBPQQANNQANNQAMNNAENNAENNNAENNAENNBAE9BAE9BAA01AA01AAw00AQ00AQ000AT0bJRGHKtqdOw1ylC93E987bCKM3sSZ3lqrYOuGr156fvqmZ16HDaQSlXrgxeLo1p1n5+amXQyu3djK89MwoiyRD5sFc/enIhlHQ167HX17OD6+e2yDnNW2RnJw5enRHSyaXh1+VfREQvz6WYiak9enxSx1i0ddaNlLeHQZR30t1/WzjlvFuHXYTPk1EFAAw00AQ00AQ000BStmF/B89TEJPy7b+AIZns/4YO0ETpL7Pn749cuDIsjQc8ZVKVTOlWx/T9VMhFVOXY0metq6EOl3Pp9F9E6GrRz9vFb4TJXdMUH3J9T8Rq0oPV6ofcgIr3c57m2dOnIkr2lI2Qi2IwuHWyGnDqAJqAPxzk6Yt4mOTZMdtWhhu53/e5Rb7/QuxcC/U9YRce/uv9l4hGKjm/hvG71jJ74o2JGTzcWpw6gCWiggSaggSaggQaagAaagAYaaAIaaAIaaKAJaKAJaKCBpnZAq86Ii6pE/IdKkaHNpBlrmkz961wqUlZubX0+i2cdDdqpbA+TO48Xfw6SbJqtVaWX+41PxbvNIuKk0YWllYh3OazcxXODp3e/zvfH0/iioqqUlW58Lm4/Ov17J2kvtIgMRu7y8p9bV36MmulbsDupra3Pv92c817iroHxoUWkGWvVTOu2mKWWOou+qx/I+9FpYjOwJXKOBpqABhpoAhpoAhpooAlooAlooIEmoIEmoIEGmoAGmoD+r/0FtfzUDe/hYaYAAAAASUVORK5CYII=">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAIAAAC2BqGFAAACtElEQVR42u3cPWsUQRjA8eeZfbm7zQkaVAJGlFQWCQZbbUSxsPILWImWfgILa8FSLKNY2YuVpBBRSWVhExQhYif4Erzc3u7ePBbJBzA3E9y7/P+k3WHzu8nM3LJEF5ZWhA4+BwHQQBPQQANNQANNQAMNNAENNAENNNAENNAENNBAE9BAE9BAA01AA01AAw00AQ00AQ000AT0bJRGHKtqdOw1ylC93E987bCKM3sSZ3lqrYOuGr156fvqmZ16HDaQSlXrgxeLo1p1n5+amXQyu3djK89MwoiyRD5sFc/enIhlHQ167HX17OD6+e2yDnNW2RnJw5enRHSyaXh1+VfREQvz6WYiak9enxSx1i0ddaNlLeHQZR30t1/WzjlvFuHXYTPk1EFAAw00AQ00AQ000BStmF/B89TEJPy7b+AIZns/4YO0ETpL7Pn749cuDIsjQc8ZVKVTOlWx/T9VMhFVOXY0metq6EOl3Pp9F9E6GrRz9vFb4TJXdMUH3J9T8Rq0oPV6ofcgIr3c57m2dOnIkr2lI2Qi2IwuHWyGnDqAJqAPxzk6Yt4mOTZMdtWhhu53/e5Rb7/QuxcC/U9YRce/uv9l4hGKjm/hvG71jJ74o2JGTzcWpw6gCWiggSaggSaggQaagAaagAYaaAIaaAIaaKAJaKAJaKCBpnZAq86Ii6pE/IdKkaHNpBlrmkz961wqUlZubX0+i2cdDdqpbA+TO48Xfw6SbJqtVaWX+41PxbvNIuKk0YWllYh3OazcxXODp3e/zvfH0/iioqqUlW58Lm4/Ov17J2kvtIgMRu7y8p9bV36MmulbsDupra3Pv92c817iroHxoUWkGWvVTOu2mKWWOou+qx/I+9FpYjOwJXKOBpqABhpoAhpoAhpooAlooAlooIEmoIEmoIEGmoAGmoD+r/0FtfzUDe/hYaYAAAAASUVORK5CYII=">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Magazzino">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#18222d">
+<title>Magazzino</title>
+<style>
+:root{--bg:#e8ebee;--card:#fff;--ink:#18222d;--mute:#5d6b79;--line:#cfd6dd;--acc:#f2b705;--bad:#b3261e;--head:#18222d;--headink:#fff}
+@media(prefers-color-scheme:dark){:root{--bg:#10161c;--card:#1a232c;--ink:#e8edf2;--mute:#97a4b1;--line:#2b3742;--bad:#ff8a80;--head:#0a0f14}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;min-height:100%}
+header{background:var(--head);color:var(--headink);padding:calc(14px + env(safe-area-inset-top,0px)) 16px 14px;position:sticky;top:0;z-index:5}
+.top{display:flex;align-items:center;gap:10px;max-width:760px;margin:0 auto}
+h1{font-size:20px;margin:0;flex:1;letter-spacing:.2px}
+.tot{font-size:13px;opacity:.8}
+main{max-width:760px;margin:0 auto;padding:12px 12px 96px}
+input,textarea,button{font:inherit;color:inherit}
+.search{width:100%;padding:12px 14px;border:2px solid var(--line);border-radius:8px;background:var(--card);margin-bottom:12px}
+.search:focus,input:focus,textarea:focus,button:focus-visible{outline:3px solid var(--acc);outline-offset:1px}
+.item{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--ink);border-radius:8px;padding:12px;margin-bottom:8px;display:flex;gap:10px;align-items:center}
+.item.zero{border-left-color:var(--bad)}
+.info{flex:1;min-width:0;cursor:pointer}
+.code{font-weight:700;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:15px}
+.desc{color:var(--mute);font-size:14px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.qty{display:flex;align-items:center;gap:6px}
+.qty b{min-width:38px;text-align:center;font-size:20px;font-variant-numeric:tabular-nums}
+.item.zero .qty b{color:var(--bad)}
+.rnd{width:44px;height:44px;border-radius:8px;border:2px solid var(--line);background:var(--bg);font-size:22px;font-weight:700;cursor:pointer}
+.rnd:active{background:var(--acc);border-color:var(--acc);color:#18222d}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));height:56px;padding:0 22px;border:0;border-radius:28px;background:var(--acc);color:#18222d;font-weight:700;font-size:16px;box-shadow:0 4px 14px rgba(0,0,0,.3);cursor:pointer;padding-bottom:env(safe-area-inset-bottom,0)}
+.empty{text-align:center;color:var(--mute);padding:40px 16px}
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.btn{padding:10px 14px;border-radius:8px;border:2px solid var(--line);background:var(--card);cursor:pointer;font-size:14px}
+.btn.pri{background:var(--acc);border-color:var(--acc);color:#18222d;font-weight:700}
+.btn.del{color:var(--bad);border-color:var(--bad)}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;z-index:20;padding:12px;overflow:auto}
+.ov[hidden]{display:none}
+.dlg{border-radius:12px;padding:18px;width:min(92vw,440px);max-height:100%;overflow:auto;background:var(--card);color:var(--ink)}
+label{display:block;font-size:14px;font-weight:600;margin:12px 0 4px}
+input[type=text],input[type=number],textarea{width:100%;padding:11px 12px;border:2px solid var(--line);border-radius:8px;background:var(--bg)}
+textarea{min-height:76px;resize:vertical}
+.row{display:flex;gap:8px;margin-top:18px}
+.row .btn{flex:1}
+.err{color:var(--bad);font-size:14px;margin-top:8px;min-height:20px}
+.note{font-size:13px;color:var(--mute);margin-top:12px}
+</style>
+</head>
+<body>
+<header><div class="top"><h1>Magazzino</h1><span class="tot" id="tot"></span></div></header>
+<main>
+  <input class="search" id="q" type="search" placeholder="Cerca per codice o descrizione" autocomplete="off">
+  <div id="list"></div>
+  <div class="tools">
+    <button class="btn" id="exCsv">Esporta CSV</button>
+    <button class="btn" id="exJson">Salva backup</button>
+    <button class="btn" id="imp">Ripristina backup</button>
+    <input type="file" id="file" accept=".json,application/json" hidden>
+  </div>
+  <p class="note">I dati restano sul tuo dispositivo, in questo browser. Salva un backup ogni tanto: se cancelli i dati del browser, l'elenco si perde.</p>
+</main>
+<button class="fab" id="add">+ Nuovo prodotto</button>
+
+<div class="ov" id="dlg" hidden><div class="dlg">
+  <h2 id="dt" style="margin:0 0 4px;font-size:18px"></h2>
+  <label for="fc">Codice di riferimento</label>
+  <input type="text" id="fc" autocomplete="off" autocapitalize="characters">
+  <label for="fd">Descrizione</label>
+  <textarea id="fd"></textarea>
+  <label for="fq">Quantità</label>
+  <input type="number" id="fq" inputmode="numeric" min="0" step="1" value="0">
+  <div class="err" id="err" role="alert"></div>
+  <div class="row">
+    <button class="btn" id="cancel" type="button">Annulla</button>
+    <button class="btn del" id="rm" type="button">Elimina</button>
+    <button class="btn pri" id="save" type="button">Salva</button>
+  </div>
+</div></div>
+
+<script>
+(function(){
+var KEY="magazzino.v1",items=[],editId=null;
+var $=function(id){return document.getElementById(id)};
+function load(){try{items=JSON.parse(localStorage.getItem(KEY)||"[]")||[]}catch(e){items=[]}}
+function store(){try{localStorage.setItem(KEY,JSON.stringify(items))}catch(e){alert("Impossibile salvare i dati su questo dispositivo.")}}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function render(){
+  var q=$("q").value.trim().toLowerCase();
+  var rows=items.slice().sort(function(a,b){return a.code.localeCompare(b.code,"it",{numeric:true})})
+    .filter(function(i){return !q||i.code.toLowerCase().indexOf(q)>-1||i.desc.toLowerCase().indexOf(q)>-1});
+  $("tot").textContent=items.length+" prodotti · "+items.reduce(function(s,i){return s+i.qty},0)+" pezzi";
+  if(!rows.length){$("list").innerHTML='<div class="empty">'+(items.length?"Nessun prodotto corrisponde alla ricerca.":"Il magazzino è vuoto. Tocca «Nuovo prodotto» per iniziare.")+"</div>";return}
+  $("list").innerHTML=rows.map(function(i){
+    return '<div class="item'+(i.qty===0?" zero":"")+'"><div class="info" data-e="'+i.id+'"><div class="code">'+esc(i.code)+'</div><div class="desc">'+esc(i.desc||"Nessuna descrizione")+'</div></div>'+
+    '<div class="qty"><button class="rnd" data-m="'+i.id+'" aria-label="Diminuisci">−</button><b>'+i.qty+'</b><button class="rnd" data-p="'+i.id+'" aria-label="Aumenta">+</button></div></div>'}).join("");
+}
+function find(id){return items.filter(function(i){return i.id===id})[0]}
+function openDlg(id){
+  editId=id;var it=id?find(id):null;
+  $("dt").textContent=it?"Modifica prodotto":"Nuovo prodotto";
+  $("fc").value=it?it.code:"";$("fd").value=it?it.desc:"";$("fq").value=it?it.qty:0;
+  $("rm").style.display=it?"":"none";$("err").textContent="";
+  $("dlg").hidden=false;$("fc").focus();
+}
+$("list").addEventListener("click",function(e){
+  var t=e.target,id;
+  if(id=t.getAttribute("data-p")){find(id).qty++;store();render()}
+  else if(id=t.getAttribute("data-m")){var it=find(id);if(it.qty>0){it.qty--;store();render()}}
+  else{var n=t.closest("[data-e]");if(n)openDlg(n.getAttribute("data-e"))}
+});
+$("add").onclick=function(){openDlg(null)};
+$("cancel").onclick=function(){$("dlg").hidden=true};
+$("q").oninput=render;
+$("save").onclick=function(){
+  var code=$("fc").value.trim(),desc=$("fd").value.trim(),qty=parseInt($("fq").value,10);
+  if(!code){$("err").textContent="Inserisci il codice di riferimento.";return}
+  if(isNaN(qty)||qty<0){$("err").textContent="La quantità deve essere zero o più.";return}
+  var dup=items.some(function(i){return i.id!==editId&&i.code.toLowerCase()===code.toLowerCase()});
+  if(dup){$("err").textContent="Esiste già un prodotto con questo codice.";return}
+  if(editId){var it=find(editId);it.code=code;it.desc=desc;it.qty=qty}
+  else items.push({id:Date.now().toString(36)+Math.random().toString(36).slice(2,6),code:code,desc:desc,qty:qty});
+  store();render();$("dlg").hidden=true;
+};
+$("rm").onclick=function(){
+  var it=find(editId);
+  if(it&&confirm("Eliminare «"+it.code+"»?")){items=items.filter(function(i){return i.id!==editId});store();render();$("dlg").hidden=true}
+};
+function dl(name,text,type){
+  var a=document.createElement("a");a.href=URL.createObjectURL(new Blob([text],{type:type}));a.download=name;
+  document.body.appendChild(a);a.click();a.remove();
+}
+var day=function(){return new Date().toISOString().slice(0,10)};
+$("exCsv").onclick=function(){
+  var q=function(s){return '"'+String(s).replace(/"/g,'""')+'"'};
+  var t="Codice;Descrizione;Quantità\r\n"+items.map(function(i){return [q(i.code),q(i.desc),i.qty].join(";")}).join("\r\n");
+  dl("magazzino-"+day()+".csv","\ufeff"+t,"text/csv");
+};
+$("exJson").onclick=function(){dl("magazzino-backup-"+day()+".json",JSON.stringify(items),"application/json")};
+$("imp").onclick=function(){$("file").click()};
+$("file").onchange=function(){
+  var f=this.files[0];if(!f)return;var r=new FileReader();
+  r.onload=function(){
+    try{
+      var d=JSON.parse(r.result);if(!Array.isArray(d))throw 0;
+      if(confirm("Sostituire l'elenco attuale con il backup ("+d.length+" prodotti)?")){
+        items=d.map(function(i){return{id:i.id||Date.now().toString(36)+Math.random().toString(36).slice(2,6),code:String(i.code||""),desc:String(i.desc||""),qty:Math.max(0,parseInt(i.qty,10)||0)}});
+        store();render()}
+    }catch(e){alert("File di backup non valido.")}
+  };
+  r.readAsText(f);this.value="";
+};
+load();render();
+if('serviceWorker' in navigator&&location.protocol.indexOf('http')===0){try{navigator.serviceWorker.register('sw.js')}catch(e){}}
+})();
+</script>
+</body>
+</html>
